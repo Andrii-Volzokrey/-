@@ -26,15 +26,14 @@ arrange = np.arange(-10, 10, 0.1)
 sin = np.sin(arrange)
 cos = np.cos(arrange)
 
-plt.subplot(1, 2, 1)
-
-plt.plot(arrange, sin, label='Sin Function')
+sp = plt.subplot(221)
+plt.plot(arrange, sin)
 plt.title('Sin')
 
-plt.show()
-
-plt.plot(arrange, cos, label='Cos Function', c='red')
+sp1 = plt.subplot(222)
+plt.plot(arrange, cos)
 plt.title('Cos')
+
 
 plt.show()
 
